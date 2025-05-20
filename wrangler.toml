@@ -1,0 +1,19 @@
+name = "budakbaong3-siren"
+main = "build/worker/shim.mjs"
+compatibility_date = "2024-05-23"
+minify = true
+
+[[kv_namespaces]]
+binding = "SIREN"
+id = "9825ae32c0ba45c3b906002a26a30f71"
+
+[build]
+command = "cargo install worker-build && worker-build --release"
+
+[env.dev]
+build = { command = "cargo install worker-build && worker-build --dev" }
+
+[vars]
+UUID = "b01c1b8a-be63-488a-8942-12b16e353d2f"
+MAIN_PAGE_URL = "https://raw.githubusercontent.com/budakbaong02/irenbudakbaong/refs/heads/master/web/index.html"
+SUB_PAGE_URL = "https://raw.githubusercontent.com/budakbaong02/irenbudakbaong/refs/heads/master/web/sub.html"
